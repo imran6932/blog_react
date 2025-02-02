@@ -1,0 +1,25 @@
+.login-container {
+  height: 80vh;
+  color: whitesmoke;
+  margin-top: 100px;
+  margin-right: 5%;
+  margin-left: -40%;
+}
+
+.forgot-password {
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: red;
+}
+
+/* Media query for large screens */
+@media (min-width: 768px) {
+  .login-container {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+}

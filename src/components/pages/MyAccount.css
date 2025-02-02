@@ -1,0 +1,31 @@
+.myaccount-container {
+  min-height: 80vh;
+  color: whitesmoke;
+  margin-top: 100px;
+  text-align: center;
+  margin-left: -30%;
+  margin-right: 2%;
+}
+
+.edit-button {
+  margin-left: -73%;
+}
+
+/* Media query for lower screen */
+@media (max-width: 375px) {
+  .edit-button {
+    margin-left: -68%;
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 768px) {
+  .myaccount-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .edit-button {
+    margin-left: -88.5%;
+  }
+}

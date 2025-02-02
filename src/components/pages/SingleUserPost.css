@@ -1,0 +1,19 @@
+.single-post-container {
+  min-height: 80vh;
+  color: whitesmoke;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.action-container {
+  margin-top: 95px;
+  margin-bottom: -60px;
+  margin-left: 0%;
+}
+
+/* Media query for large screens */
+@media (min-width: 768px) {
+  .action-container {
+    margin-left: 17%;
+  }
+}

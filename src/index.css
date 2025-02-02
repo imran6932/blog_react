@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--secondaryBackground);
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --background: #2eb2d3;
+  --secondaryBackground: #10131a;
+  --text: #eff0f2;
+  --background-color: #2eb2d3;
+}

@@ -1,0 +1,26 @@
+.dashboard-container {
+  min-height: 70vh;
+  color: whitesmoke;
+  margin-top: 20px;
+  margin-left: 18px;
+  margin-right: 18px;
+  text-align: center;
+}
+
+.create-blog {
+  margin-top: 80px;
+  margin-left: -18%;
+}
+/* Media query for large screens */
+@media (min-width: 768px) {
+  .dashboard-container {
+    margin-left: 25%;
+    margin-right: 0;
+    margin-top: 0px;
+  }
+
+  .create-blog {
+    margin-top: 95px;
+    margin-left: 9.5%;
+  }
+}

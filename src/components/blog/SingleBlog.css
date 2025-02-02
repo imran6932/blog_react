@@ -1,0 +1,41 @@
+.single-blog-container {
+  border-radius: 10px;
+  background-color: rgb(53, 43, 43);
+  padding: 20px;
+  margin-top: 85px;
+  min-height: 80vh;
+  height: fit-content;
+  text-align: center;
+}
+
+.single-blog-container a {
+  text-decoration: none;
+}
+
+.single-blog-description {
+  color: white;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.single-blog-container h6 {
+  margin-top: 20px;
+
+  color: rgb(127, 118, 118);
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.single-blog-container h4 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.single-blog-image {
+  width: 75%;
+  height: 75%;
+  margin: 20px 0px;
+  border-radius: 5px;
+}

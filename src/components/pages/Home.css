@@ -1,0 +1,17 @@
+.home-container {
+  min-height: 80vh;
+  color: whitesmoke;
+  margin-top: 60px;
+  margin-left: 18px;
+  margin-right: 18px;
+  text-align: center;
+}
+
+/* Media query for large screens */
+@media (min-width: 768px) {
+  .home-container {
+    margin-left: 25%;
+    margin-right: 0;
+    margin-top: 70px;
+  }
+}

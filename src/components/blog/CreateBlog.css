@@ -1,0 +1,15 @@
+.create-blog-container {
+  margin: 75px 0px;
+  min-height: 80vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgb(53, 43, 43);
+}
+
+/* Media query for large screens */
+@media (min-width: 768px) {
+  .create-blog-container {
+    margin-left: 17%;
+    margin-top: 100px;
+  }
+}

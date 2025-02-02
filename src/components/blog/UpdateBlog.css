@@ -1,0 +1,14 @@
+.update-blog-container {
+  margin: 75px 0px;
+  min-height: 80vh;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Media query for large screens */
+@media (min-width: 768px) {
+  .update-blog-container {
+    margin-left: 17%;
+    margin-top: 100px;
+  }
+}

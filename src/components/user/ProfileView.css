@@ -1,0 +1,21 @@
+.profile-container {
+  border-radius: 10px;
+  background-color: rgb(53, 43, 43);
+  padding: 20px;
+  margin: 10px 0px;
+  min-height: 80vh;
+  height: 80vh;
+  border-radius: 10px;
+}
+
+.profile-photo img {
+  border: 2px solid #e7eff8;
+  padding: 5px;
+}
+
+/* Media query for large screens */
+@media (min-width: 768px) {
+  .profile-container {
+    margin-top: 20px;
+  }
+}

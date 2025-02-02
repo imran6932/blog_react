@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: .
+    container_name: blog_react_frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - react_network
+
+networks:
+  react_network:
+    driver: bridge
+    
