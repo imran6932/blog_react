@@ -31,6 +31,25 @@ const BlogView = () => {
     }
   };
 
+  console.log("postsData", postsData)
+  try {
+    if (postsData.data.length === 0) {
+      return (
+        <div className="col-sm-6 offset-3 message">
+          <p className="">No posts found</p>
+        </div>
+      )
+    }
+   } catch(e) {
+    if (postsData.length === 0) {
+      return (
+        <div className="col-sm-6 offset-3 message">
+          <p className="">No posts found</p>
+        </div>
+      )
+    }
+   }
+
   return (
     <>
       {Array.isArray(postsData.data) && postsData.data.length > 0 ? (

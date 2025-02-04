@@ -41,3 +41,7 @@ nav {
   height: 40px;
   width: 40px;
 }
+
+.navbar-toggler-icon {
+  filter: invert(1); /* Changes black to white */
+}

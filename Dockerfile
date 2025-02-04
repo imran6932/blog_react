@@ -1,13 +1,25 @@
-# Build stage
-FROM node:16 AS build
+# Stage 1: Build the Vite app
+FROM node:18 as build
 WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm install
-COPY . .
-RUN npm run build
 
-# Production stage
+# Copy package files first to optimize Docker layer caching
+COPY package.json yarn.lock ./
+
+# Install dependencies
+RUN yarn install --frozen-lockfile
+
+# Copy the rest of the project files
+COPY . .
+
+# Build the Vite project
+RUN yarn run build
+
+# Stage 2: Serve with Nginx
 FROM nginx:alpine
-COPY --from=build /app/dist /usr/share/nginx/html
-EXPOSE 3000
-CMD ["nginx", "-g", "daemon off;"]
+
+# Copy Vite build output to Nginx's serving directory
+COPY --from=build /app/dist /usr/share/nginx/html/blog_react
+
+# Expose port 80
+EXPOSE 80
+
